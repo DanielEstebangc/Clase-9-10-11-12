@@ -15,7 +15,7 @@ class Ventana1(QMainWindow):
 
         self.setWindowTitle("Formulario de registro")
 
-        self.setWindowIcon(QtGui.QIcon("imagenes/descarga.png"))
+        self.setWindowIcon(QtGui.QIcon("imagenes/download.jpeg"))
         self.ancho = 1200
         self.alto = 800
 
@@ -30,7 +30,7 @@ class Ventana1(QMainWindow):
         self.setFixedHeight(self.alto)
 
         self.fondo = QLabel(self)
-        self.imagenFondo = QPixmap("imagenes/fondo.jpg")
+        self.imagenFondo = QPixmap("imagenes/download (1).jpeg")
         self.fondo.setPixmap(self.imagenFondo)
         self.fondo.setScaledContents(True)
         self.resize(self.imagenFondo.width(), self.imagenFondo.height())

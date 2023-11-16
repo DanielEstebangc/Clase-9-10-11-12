@@ -16,8 +16,8 @@ class Ventana1(QMainWindow):
         self.setWindowTitle("Formulario de registro")
 
         self.setWindowIcon(QtGui.QIcon("imagenes/download.jpeg"))
-        self.ancho = 1200
-        self.alto = 800
+        self.ancho = 1000
+        self.alto = 500
 
         self.resize(self.ancho, self.alto)
 

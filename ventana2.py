@@ -1,5 +1,5 @@
 import sys
-
+import os
 from PyQt5.QtGui import QPixmap, QFont
 from PyQt5.QtWidgets import QMainWindow, QDesktopWidget, QLabel, QVBoxLayout, QScrollArea, QWidget, QGridLayout, \
     QButtonGroup, QPushButton, QApplication
@@ -14,6 +14,8 @@ class Ventana2(QMainWindow):
 
     def __init__(self, anterior):
         super(Ventana2, self).__init__(anterior)
+
+
 
         self.ventanaAnterior = anterior
 
@@ -70,6 +72,7 @@ class Ventana2(QMainWindow):
         self.vertical.addWidget(self.scrollArea)
 
         self.file = open('datos/clientes.txt', 'rb')
+
 
         self.usuarios = []
 
